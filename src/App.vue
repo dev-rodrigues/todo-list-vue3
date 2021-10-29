@@ -2,9 +2,15 @@
 
   <div class="wrapper">
     <form @submit.prevent="addNewTodo">
-      <label>Todo:</label>
-      <input v-model="newTodo" name="newTodo">
-      <button>Add new todo</button>
+      <h1>Tarefas:</h1>
+      <input 
+        placeholder="Informe o noem da tarefa" 
+        v-model="newTodo" 
+        name="newTodo"
+      >
+      <button>
+        Adicionar nova tarefa
+      </button>
     </form>
 
     <ul>
